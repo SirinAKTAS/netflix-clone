@@ -65,4 +65,11 @@ export default {
       },
     ];
   },
+  getMovieInfo: async (movieId) => {
+    let info = []
+    if(movieId){
+      info = await fetchMovies(`movie/${movieId}`)
+    }
+    return info
+  }
 };
