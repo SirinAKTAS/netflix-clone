@@ -5,7 +5,88 @@
 }
 
 .featured--horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px; 
+    padding-top: 40px;
     width: inherit;
     height: inherit;
     background: linear-gradient(to right, #111 5%, transparent 70%);
+    color: white;
+}
+
+.featured--name {
+    font-weight: bold;
+    font-size: 46px;
+    padding-bottom: 10px;
+}
+
+.featured--info {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 14px;
+}
+
+.featured--info--stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.featured--overview {
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+.featured--button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 14px;
+    padding-top: 20px;
+}
+
+.btn--play {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+}
+
+.btn--addList {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    color: blue;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+}
+
+.btn--addList:hover, .btn--play:hover {
+    cursor: pointer;
+}
+
+.featured--categorie {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 992px){
+    .featured--horizontal {
+        padding-top: 90px;
+    }
+
+
+    .featured--overview {
+        width: 60%;
+    } 
+
 }

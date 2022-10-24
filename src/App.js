@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ApiMovie from "./ApiMovie";
 import "./App.css";
 import FeaturedMovie from "./components/FeaturedMovie";
+import Header from "./components/Header";
 import MovieSection from "./components/MovieSection";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
   }, []);
 
   return (
+    <>
+    <Header />
     <div className="container">
       {featureData && <FeaturedMovie film={featureData} />}
       <section className="list">
@@ -34,6 +37,7 @@ function App() {
         ))}
       </section>
     </div>
+    </>
   );
 }
 
