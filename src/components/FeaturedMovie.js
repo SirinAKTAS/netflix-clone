@@ -14,7 +14,7 @@ const FeaturedMovie = ({film}) => {
         backgroundSize: 'cover',
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${film.backdrop_path})`,
         backgroundPosition: 'center',
-        height: '90vh'
+        height: '100vh'
     }}>
         <div className='featured--vertical'>
             <div className='featured--horizontal'>
